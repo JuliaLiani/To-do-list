@@ -1,0 +1,148 @@
+body {
+    background-image: linear-gradient(to left, #29323c 0%, #485563 100%);
+  }
+  
+  .btnsContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2%;
+    padding-right: 5%;
+  }
+  
+  .clrTrnsnBtn {
+    margin: 5px;
+  }
+  
+  .btnDark,
+  .btnLighter,
+  .btnLight {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .btnDark {
+    background-color: #061225;
+    border-color: #b7d2e6;
+  }
+  
+  .btnLighter {
+    background-color: #41637e;
+    border-color: #b7d2e6;
+  }
+  
+  .btnLight {
+    background-color: #9da0a3;
+    border-color: #b7d2e6;
+  }
+  
+  /*https://usefulangle.com/post/85/css-typewriter-animation
+      Typewriter animation, for heading 
+      <h1>
+      */
+  .header {
+    font-family: Courier, monospace;
+    display: inline-block;
+  }
+  
+  .headerText {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 60px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 59px;
+    color: white;
+  }
+  
+  .header,
+  .placeholder {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .task {
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    max-width: 700px;
+    width: 100%;
+    background-color: #041122;
+    color: white;
+    transition: background-color 200ms ease-in-out;
+  }
+  
+  .btn {
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    padding: 10px;
+    font-size: 17px;
+    transition: background-color 200ms ease-in-out;
+  }
+  
+  .taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*new CSS class from JS*/
+  .newTaskStyle {
+    text-align: center;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    font-size: 20px;
+    padding: 10px;
+    border: solid 1px black;
+    outline: none;
+    max-width: 600px;
+    width: 100%;
+    background-color: #b7d2e6;
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  .taskCompletedStyle {
+    background-color: #041122;
+    color: aliceblue;
+    font-weight: bolder;
+    text-decoration: line-through;
+    transition: all 1s ease;
+  }
+  
+  /*typeframe animation for 
+      <h1>
+      */
+  @keyframes typing {
+    from {
+      width: 0%
+    }
+  
+    to {
+      width: 100%
+    }
+  }
+  
+  @keyframes blink {
+  
+    from,
+    to {
+      border-color: transparent
+    }
+  
+    50% {
+      border-color: orange;
+    }
+  }
