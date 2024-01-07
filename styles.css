@@ -148,12 +148,12 @@ body {
     }
   }
 @media all and (max-width: 800px){
-h1{
+.headerText{
 font-size: 45px;
 }
 }
 @media all and (max-width: 500px){
-h1{
+.headerText{
 font-size: 37px;
 }
 }
