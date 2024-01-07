@@ -141,8 +141,19 @@ body {
     to {
       border-color: transparent
     }
-  
-    50% {
+
+
+   50% {
       border-color: orange;
     }
   }
+@media all and (max-width: 800px){
+h1{
+font-size: 45px;
+}
+}
+@media all and (max-width: 500px){
+h1{
+font-size: 37px;
+}
+}
